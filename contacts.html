@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--	 <style>body{opacity: 0;}</style>-->
+	<style>
+		/* Начальное состояние */
+		body {
+			opacity: 0;
+			transition: opacity 0.5s ease-in-out;
+		}
+
+		/* Класс, добавляемый после загрузки */
+		html.loaded body {
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__left">
+					<a href="/" class="header__logo logo"><img class="ibg" src="img/logo.svg" alt="Logo"></a>
+					<div class="header__languages">
+						<a class="header__languages-link" href="">RU</a>
+						<a class="header__languages-link" href="">EN</a>
+						<a class="header__languages-link _active" href="">SR</a>
+					</div>
+				</div>
+				<div class="header__right">
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item _active"><a href="#" class="menu__link">Home</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Bar</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Food</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Ramen</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Book a table</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="contacts">
+				<div class="contacts__container">
+					<h1 class="contacts__title title"><span>C</span>ONTACT US</h1>
+					<div class="contacts__inner">
+						<div class="contacts__info">
+							<div class="contacts__item">
+								<div class="contacts__item-label">IDOL TIKI BAR</div>
+								<div class="contacts__item-value">Strahinjića Bana 61
+									Beograd
+								</div>
+							</div>
+							<div class="contacts__item">
+								<div class="contacts__item-label">
+									<a href="tel:+381611814599">
+										+381 61 181 4599
+									</a>
+								</div>
+								<div class="contacts__item-value"><a href="mailto:idolbar.rs@gmail.com">idolbar.rs@gmail.com</a>
+								</div>
+							</div>
+						</div>
+						<div class="contacts__time">
+							<div class="contacts__time-title"><span>R</span>ADNO VREME</div>
+							<ul>
+								<li>
+									Mon 18.00 - 00.00 Thu-Thu,
+
+								</li>
+								<li>
+									Sun 12:00 - 00:00
+
+								</li>
+								<li>
+									Fri-Sat 12:00 - 01:00
+
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="map-wrap">
+				<div class="map-wrap__circle map-wrap__circle_right">
+					<img src="img/decor/circle.webp" alt="Image">
+				</div>
+				<div class="map-wrap__container-fw">
+					<div class="map-wrap__inner">
+						<iframe src="https://yandex.ru/map-widget/v1/?ll=20.459356%2C44.818652&z=16&l=map" width="100%" height="100%" frameborder="0" style="border:0; filter:grayscale(100%) brightness(95%);">
+						</iframe>
+						<img src="img/icons/pin.svg" alt="IDOL TIKI BAR">
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="cocktails-gallery">
+				<div class="item-bar__circle item-bar__circle_left">
+					<img src="img/decor/circle.webp" alt="Image">
+				</div>
+				<div class="cocktails-gallery__container-fw">
+					<div class="cocktails-gallery__inner" data-gallery>
+						<div class="cocktails-gallery__item">
+							<img src="img/contacts-gallery/01.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/contacts-gallery/02.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/contacts-gallery/03.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/contacts-gallery/04.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/contacts-gallery/05.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/contacts-gallery/06.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/contacts-gallery/07.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/contacts-gallery/08.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/contacts-gallery/09.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/contacts-gallery/10.webp" alt="Image" class="ibg">
+						</div>
+					</div>
+				</div>
+				<div class="cocktails-gallery__marquee">
+					<div class="marquee">
+						<div class="marquee__items">
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+						</div>
+						<div aria-hidden="true" class="marquee__items">
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+
+						</div>
+						<div class="marquee__items">
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+						</div>
+						<div aria-hidden="true" class="marquee__items">
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<div class="footer__container">
+					<div class="footer__top">
+						<div class="footer__top-col">
+							<div class="footer__top-title title_h3 title">
+								<span>C</span>ontact
+							</div>
+							<a href="tel:+381611814599">+381 61 181 45 99</a>
+						</div>
+						<div class="footer__top-col">
+							<div class="footer__top-title title_h3 title">
+								<span>M</span>essenger
+							</div>
+							<ul class="footer__top-list">
+								<li>
+									<a href="">Instagram</a>
+								</li>
+								<li>
+									<a href="">Tripadvisor</a>
+								</li>
+								<li>
+									<a href="">Facebook</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__top-col">
+							<div class="footer__top-title title_h3 title">
+								<span>A</span>dresa
+							</div>
+							Strahinjića Bana 61, Belgrade
+						</div>
+						<div class="footer__top-col">
+							<div class="footer__top-title title_h3 title">
+								<span>R</span>ADNO VREME
+							</div>
+							<ul>
+								<li>
+									Mon 18.00 - 00.00 Thu-Thu,
+								</li>
+								<li>
+									Sun 12:00 - 00:00
+								</li>
+								<li>
+									Fri-Sat 12:00 - 01:00
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<nav class="footer-menu">
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<a href="">Home</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="">Bar</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="">Food</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="">Ramen</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="">Book a table</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="">Contact us</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="footer__bottom-copy">
+							IDOL tiki bar 2025
+						</div>
+						<div class="footer__bottom-action">
+							<a href="" class="footer__bottom-btn button">WhatsApp</a>
+							<a href="" class="footer__bottom-btn button button_black">Wolt Dostava</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js"></script>
+	<div id="widget" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.73333 1.48883L21.5469 21.0288" stroke="var(--primary)" stroke-linecap="square" />
+						<path d="M21.2667 1.48883L1.45309 21.0288" stroke="var(--primary)" stroke-linecap="square" />
+					</svg>
+				</button>
+				<div class="popup__text">
+					<!--вставляем сюда widget -->
+
+					<!--end  -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+	<title>Home</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--	 <style>body{opacity: 0;}</style>-->
+	<style>
+		/* Начальное состояние */
+		body {
+			opacity: 0;
+			transition: opacity 0.5s ease-in-out;
+		}
+
+		/* Класс, добавляемый после загрузки */
+		html.loaded body {
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__left">
+					<a href="/" class="header__logo logo"><img class="ibg" src="img/logo.svg" alt="Logo"></a>
+					<div class="header__languages">
+						<a class="header__languages-link" href="">RU</a>
+						<a class="header__languages-link" href="">EN</a>
+						<a class="header__languages-link _active" href="">SR</a>
+					</div>
+				</div>
+				<div class="header__right">
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item _active"><a href="#" class="menu__link">Home</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Bar</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Food</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Ramen</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Book a table</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="hero">
+				<div class="hero__video">
+					<!-- ПК-видео -->
+					<video class="hero__video-bg hero__video-bg_pc" autoplay muted loop playsinline>
+						<source src="files/hero-bg-desktop.mp4" type="video/mp4">
+					</video>
+
+					<!-- Мобильное видео -->
+					<video class="hero__video-bg hero__video-bg_mob" autoplay muted loop playsinline>
+						<source src="files/hero-bg-mobile.mp4" type="video/mp4">
+					</video>
+				</div>
+				<div class="hero__container">
+					<div class="hero__content">
+						<h1 class="hero__title title">
+							<span>CEKAMO VAS U</span> <br>
+							IDOL TIKI BARU
+						</h1>
+						<button class="button hero__btn" type="button" data-popup="#widget">Book</button>
+					</div>
+					<div class="hero__info">
+						<div class="hero__info-item">
+							<div class="hero__info-title">Radno vreme</div>
+							<ul class="hero__info-list text">
+								<li>
+									Mon 18.00 - 00.00 Thu-Thu,
+								</li>
+								<li>
+									Sun 12:00 - 00:00
+								</li>
+								<li>
+									Fri-Sat 12:00 - 01:00
+								</li>
+							</ul>
+						</div>
+						<div class="hero__info-item">
+							<div class="hero__info-title">Messenger</div>
+							<ul class="hero__info-list text">
+								<li>
+									<a href="">
+										Instagram
+
+									</a>
+								</li>
+								<li>
+									<a href="">
+										Tripadvisor
+
+									</a>
+								</li>
+								<li>
+
+									<a href="">
+										Facebook
+
+									</a>
+
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section cocktails">
+				<div class="cocktails__circle cocktails__circle_right">
+					<img src="img/decor/circle.webp" alt="Image">
+				</div>
+				<div class="cocktails__circle cocktails__circle_left">
+					<img src="img/decor/circle.webp" alt="Image">
+				</div>
+				<div class="section__top">
+					<div class="section__container">
+						<div class="cocktails__top">
+							<h2 class="cocktails__title title"><span>Meka</span> koktela</h2>
+							<div class="swiper-controls">
+								<button type="button" class="swiper-button swiper-button-prev cocktails-btn-prev">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#dropdown"></use>
+									</svg>
+								</button>
+								<button type="button" class="swiper-button swiper-button-next cocktails-btn-next">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#dropdown"></use>
+									</svg>
+								</button>
+							</div>
+						</div>
+						<div class="cocktails__text text">U barskoj ponudi su egzotični kokteli na bazi ruma, voćnih sokova
+							i
+							domaćih sirupa. U našem Black Book ćete naći i poznate tiki koktele poput Zombija ili Maj Taj,
+							kao i
+							napitke novog doba.
+						</div>
+					</div>
+				</div>
+				<div class="section__bottom">
+					<div class="section__container-fw">
+						<div class="cocktails__body swiper">
+							<div class="cocktails__wrapper swiper-wrapper">
+								<div class="cocktails__slide swiper-slide">
+									<img class="ibg" src="img/cocktails/01.webp" alt="Image">
+								</div>
+								<div class="cocktails__slide swiper-slide">
+									<img class="ibg" src="img/cocktails/02.webp" alt="Image">
+								</div>
+								<div class="cocktails__slide swiper-slide">
+									<img class="ibg" src="img/cocktails/03.webp" alt="Image">
+								</div>
+								<div class="cocktails__slide swiper-slide">
+									<img class="ibg" src="img/cocktails/04.webp" alt="Image">
+								</div>
+								<div class="cocktails__slide swiper-slide">
+									<img class="ibg" src="img/cocktails/05.webp" alt="Image">
+								</div>
+								<div class="cocktails__slide swiper-slide">
+									<img class="ibg" src="img/cocktails/01.webp" alt="Image">
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+
+							<!-- Если нужен скролбар -->
+							<div class="swiper-scrollbar"></div>
+						</div>
+						<div class="cocktails__action">
+							<button class="cocktails__btn button" type="button" data-popup="#widget">
+								Black book
+								<i class="button__icon">
+									<svg>
+										<use xlink:href="img/icons/icons.svg#dropdown"></use>
+									</svg>
+								</i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="cuisine section">
+				<div class="section__top">
+					<div class="section__container">
+						<h2 class="section__title title"><span>Asian</span>Cuisine</h2>
+						<div class="section__text text">
+							In IDOL we are offering Asian cuisine along with our tiki cocktails. Spicy and aromatic dishes
+							perfectly complement vivid and fresh tiki cocktails. We create the atmosphere of a tiki bar
+							where
+							delicious and delightful coexists with bright and cheerful.
+						</div>
+					</div>
+				</div>
+				<div class="section__bottom">
+					<div class="section__container-fw">
+						<div class="cuisine__body swiper">
+							<div class="cuisine__wrapper swiper-wrapper">
+								<div class="cuisine__slide swiper-slide">
+									<img src="img/cuisine/01.webp" alt="Image" class="ibg">
+								</div>
+								<div class="cuisine__slide swiper-slide">
+									<img src="img/cuisine/02.webp" alt="Image" class="ibg">
+								</div>
+								<div class="cuisine__slide swiper-slide">
+									<img src="img/cuisine/02.webp" alt="Image" class="ibg">
+								</div>
+								<div class="cuisine__slide swiper-slide">
+									<img src="img/cuisine/01.webp" alt="Image" class="ibg">
+								</div>
+								<div class="cuisine__slide swiper-slide">
+									<img src="img/cuisine/02.webp" alt="Image" class="ibg">
+								</div>
+								<div class="cuisine__slide swiper-slide">
+									<img src="img/cuisine/02.webp" alt="Image" class="ibg">
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="cuisine__action">
+							<a href="" class="cuisine__btn button">Menu</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section section_fw estetica">
+				<div class="estetica__circle estetica__circle_right">
+					<img src="img/decor/circle.webp" alt="Image">
+				</div>
+				<div class="estetica__circle estetica__circle_left">
+					<img src="img/decor/circle.webp" alt="Image">
+				</div>
+				<div class="section__top">
+					<div class="section__container">
+						<h2 class="section__title title"><span>Dizajn</span> i estetika</h2>
+						<div class="section__text text">
+							Izobilje boja, tropske biljke i zastrašujući idoli bude maštu. Kokteli se služe u ručno rađenim
+							čašama u obliku tiki idola. Uz lagani ritam tehno-muzike zaboravićete na užurbanu svakodnevicu i
+							predaćete se osećaju letnjeg zamora.
+						</div>
+					</div>
+				</div>
+				<div class="section__bottom">
+					<div class="estetica__inner">
+						<div class="estetica__item">
+							<img class="ibg" src="img/estetica/01.webp" alt="Image">
+						</div>
+						<div class="estetica__item">
+							<img class="ibg" src="img/estetica/02.webp" alt="Image">
+						</div>
+						<div class="estetica__item">
+							<img class="ibg" src="img/estetica/03.webp" alt="Image">
+						</div>
+						<div class="estetica__item">
+							<img class="ibg" src="img/estetica/04.webp" alt="Image">
+						</div>
+						<div class="estetica__item">
+							<img class="ibg" src="img/estetica/05.webp" alt="Image">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<div class="footer__container">
+					<div class="footer__top">
+						<div class="footer__top-col">
+							<div class="footer__top-title title_h3 title">
+								<span>C</span>ontact
+							</div>
+							<a href="tel:+381611814599">+381 61 181 45 99</a>
+						</div>
+						<div class="footer__top-col">
+							<div class="footer__top-title title_h3 title">
+								<span>M</span>essenger
+							</div>
+							<ul class="footer__top-list">
+								<li>
+									<a href="">Instagram</a>
+								</li>
+								<li>
+									<a href="">Tripadvisor</a>
+								</li>
+								<li>
+									<a href="">Facebook</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__top-col">
+							<div class="footer__top-title title_h3 title">
+								<span>A</span>dresa
+							</div>
+							Strahinjića Bana 61, Belgrade
+						</div>
+						<div class="footer__top-col">
+							<div class="footer__top-title title_h3 title">
+								<span>R</span>ADNO VREME
+							</div>
+							<ul>
+								<li>
+									Mon 18.00 - 00.00 Thu-Thu,
+								</li>
+								<li>
+									Sun 12:00 - 00:00
+								</li>
+								<li>
+									Fri-Sat 12:00 - 01:00
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<nav class="footer-menu">
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<a href="">Home</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="">Bar</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="">Food</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="">Ramen</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="">Book a table</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="">Contact us</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="footer__bottom-copy">
+							IDOL tiki bar 2025
+						</div>
+						<div class="footer__bottom-action">
+							<a href="" class="footer__bottom-btn button">WhatsApp</a>
+							<a href="" class="footer__bottom-btn button button_black">Wolt Dostava</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js"></script>
+	<div id="widget" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.73333 1.48883L21.5469 21.0288" stroke="var(--primary)" stroke-linecap="square" />
+						<path d="M21.2667 1.48883L1.45309 21.0288" stroke="var(--primary)" stroke-linecap="square" />
+					</svg>
+				</button>
+				<div class="popup__text">
+					<!--вставляем сюда widget -->
+
+					<!--end  -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

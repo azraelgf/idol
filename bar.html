@@ -1,0 +1,2575 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+	<title>BAR</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--	 <style>body{opacity: 0;}</style>-->
+	<style>
+		/* Начальное состояние */
+		body {
+			opacity: 0;
+			transition: opacity 0.5s ease-in-out;
+		}
+
+		/* Класс, добавляемый после загрузки */
+		html.loaded body {
+			opacity: 1;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__left">
+					<a href="/" class="header__logo logo"><img class="ibg" src="img/logo.svg" alt="Logo"></a>
+					<div class="header__languages">
+						<a class="header__languages-link" href="">RU</a>
+						<a class="header__languages-link" href="">EN</a>
+						<a class="header__languages-link _active" href="">SR</a>
+					</div>
+				</div>
+				<div class="header__right">
+					<div class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item _active"><a href="#" class="menu__link">Home</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Bar</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Food</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Ramen</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Book a table</a></li>
+								<li class="menu__item"><a href="#" class="menu__link">Contact us</a></li>
+							</ul>
+						</nav>
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<section class="section">
+				<div class="section__top">
+					<div class="section__container-fw">
+						<div class="gallery-hero">
+							<div class="gallery-hero__body swiper">
+								<div class="gallery-hero__wrapper swiper-wrapper">
+									<div class="gallery-hero__slide swiper-slide">
+										<img src="img/bar/gallery-hero/01.webp" alt="Image" class="ibg">
+									</div>
+									<div class="gallery-hero__slide swiper-slide">
+										<img src="img/bar/gallery-hero/02.webp" alt="Image" class="ibg">
+									</div>
+									<div class="gallery-hero__slide swiper-slide">
+										<img src="img/bar/gallery-hero/03.webp" alt="Image" class="ibg">
+									</div>
+									<div class="gallery-hero__slide swiper-slide">
+										<img src="img/bar/gallery-hero/01.webp" alt="Image" class="ibg">
+									</div>
+									<div class="gallery-hero__slide swiper-slide">
+										<img src="img/bar/gallery-hero/02.webp" alt="Image" class="ibg">
+									</div>
+									<div class="gallery-hero__slide swiper-slide">
+										<img src="img/bar/gallery-hero/03.webp" alt="Image" class="ibg">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section__bottom bar">
+					<div class="bar__circle bar__circle_left">
+						<img src="img/decor/circle.webp" alt="Image">
+					</div>
+					<div class="bar__container">
+						<div class="bar__menu bar-menu">
+							<h1 class="bar-menu__title title"><span>B</span>AR</h1>
+							<div class="bar-menu__text text">
+								<p>
+									IDOL-ovi kokteli nisu samo pića. Svaki od njih predstavlja karakter i raspoloženje,
+									arhetip
+									i
+									moć. Kao naš cenjeni gost, krećete na izvanredno putovanje ispunjeno nizom gastronomskih
+									otkrića.
+								</p>
+
+								<p>
+									Navigirajući kroz slike, ukuse i arome, proširujući svoje unutrašnje horizonte sa svakom
+									novom
+									linijom, mi, duhovi IDOL-a, verujemo da će ovo putovanje dovesti do posebnog osećaja,
+									gutljaja,
+									arome — svega što ostaje unutra mnogo, mnogo godina.
+								</p>
+
+								<p>
+									Počnite ovo putovanje!
+								</p>
+							</div>
+							<div class="bar-menu__nav nav-menu">
+								<button class="nav-menu__btn button" type="button" data-goto-header data-goto=".item-bar_dolls">
+									IDOLs
+									<i class="button__icon">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#dropdown"></use>
+										</svg>
+									</i>
+								</button>
+								<button class="nav-menu__btn button" type="button" data-goto-header data-goto=".item-bar_icons">
+									ICONs
+									<i class="button__icon">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#dropdown"></use>
+										</svg>
+									</i>
+								</button>
+								<button class="nav-menu__btn button" type="button" data-goto-header data-goto=".item-bar_sons">
+									SONs
+									<i class="button__icon">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#dropdown"></use>
+										</svg>
+									</i>
+								</button>
+								<button class="nav-menu__btn button" type="button">
+									DRAFT COCTAILs
+									<i class="button__icon">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#dropdown"></use>
+										</svg>
+									</i>
+								</button>
+								<button class="nav-menu__btn button" type="button">
+									MOCKTAILs
+									<i class="button__icon">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#dropdown"></use>
+										</svg>
+									</i>
+								</button>
+								<button class="nav-menu__btn button" type="button" data-goto-header data-goto=".item-bar_spirits">
+									SPIRITs
+									<i class="button__icon">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#dropdown"></use>
+										</svg>
+									</i>
+								</button>
+								<button class="nav-menu__btn button" type="button">
+									SOFT DRINKs
+									<i class="button__icon">
+										<svg>
+											<use xlink:href="img/icons/icons.svg#dropdown"></use>
+										</svg>
+									</i>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="marquee">
+				<div class="marquee__items">
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+				</div>
+				<div aria-hidden="true" class="marquee__items">
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+
+				</div>
+				<div class="marquee__items">
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+				</div>
+				<div aria-hidden="true" class="marquee__items">
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+
+				</div>
+			</div>
+
+			<section class="item-bar item-bar_dolls">
+				<div class="item-bar__circle item-bar__circle_right">
+					<img src="img/decor/circle.webp" alt="Image">
+				</div>
+				<div class="item-bar__circle item-bar__circle_left">
+					<img src="img/decor/circle.webp" alt="Image">
+				</div>
+				<div class="item-bar__container-fw">
+					<div class="item-bar__wrapper">
+						<div class="item-bar__gallery">
+							<div class="item-bar__gallery-sticky">
+								<div class="item-bar__body swiper">
+									<div class="swiper-wrapper">
+										<div class="item-bar__slide swiper-slide">
+											<img src="img/gallery-slider/dolls/01.webp" alt="Image" class="ibg">
+										</div>
+										<div class="item-bar__slide swiper-slide">
+											<img src="img/gallery-slider/dolls/01.webp" alt="Image" class="ibg">
+										</div>
+										<div class="item-bar__slide swiper-slide">
+											<img src="img/gallery-slider/dolls/01.webp" alt="Image" class="ibg">
+										</div>
+										<div class="item-bar__slide swiper-slide">
+											<img src="img/gallery-slider/dolls/01.webp" alt="Image" class="ibg">
+										</div>
+									</div>
+									<div class="swiper-controls">
+										<button type="button" class="swiper-button swiper-button-prev">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#dropdown"></use>
+											</svg>
+										</button>
+										<button type="button" class="swiper-button swiper-button-next">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#dropdown"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="item-bar__gallery-small gallery-small">
+								<div class="gallery-small__decor">
+									<img src="img/decor/circle-head.webp" alt="Image">
+								</div>
+								<div class="gallery-small__list">
+									<div class="gallery-small__item">
+										<img src="img/gallery-slider/dolls/small/01.webp" alt="Image" class="ibg">
+									</div>
+									<div class="gallery-small__item">
+										<img src="img/gallery-slider/dolls/small/02.webp" alt="Image" class="ibg">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-bar__content">
+							<h2 class="item-bar__title title">
+								<span>I</span>DOLs
+							</h2>
+							<div class="item-bar__text text">
+								<p>
+									Kokteli u ovoj kategoriji su mnogo više nego samo piće. Svi su isprepleteni s
+									jednom
+									pričom, stvarajući izvanredan, malo opasan, ali zato toliko privlačan svet.
+								</p>
+								<p>
+									Sa svakim pićem, birate zaštitnog duha da vas prati kroz džungle ove večeri.
+									Ovde se
+									ukus i opijenost, fantazije i tajne spajaju u jedno.
+								</p>
+								<p> Glatko uronite, Putniče!</p>
+							</div>
+							<div class="item-bar__content-list" data-spoilers data-one-spoller>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">MEKA ALOHA</div>
+											<div class="compound__text text">(Mix rum, Liker od crne ribizle, Kokos,
+												Limeta,
+												Ananasov sok)
+											</div>
+										</div>
+										<div class="compound__price">
+											1180
+										</div>
+									</div>
+									<div class="compound__info">
+										<button class="compound__btn stretched-link" type="button" data-spoiler>
+											Duhovi vulkana
+											<i>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#dropdown"></use>
+												</svg>
+											</i>
+										</button>
+										<div class="compound__info-body">
+											<small>
+												Ovaj duh nije izgubio sposobnost letenja, često posmatra sve sa
+												visine. Tokom godina, došla mu je mudrost, a sa mudrošću je naučio
+												gorčinu. Ne bojte se da ga pitate za savet - istina ostaje kakva
+												jeste, kakva god da je.
+											</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">BARON</div>
+											<div class="compound__text text">Sherry medium, Beli rum, Burbon,
+												Kokos, Krema, Gorki duvan
+											</div>
+										</div>
+										<div class="compound__price">
+											1180
+										</div>
+									</div>
+									<div class="compound__info">
+										<button class="compound__btn stretched-link" type="button" data-spoiler>
+											Vlasnik
+											<i>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#dropdown"></use>
+												</svg>
+											</i>
+										</button>
+										<div class="compound__info-body">
+											<small>
+												Ovaj duh nije izgubio sposobnost letenja, često posmatra sve sa
+												visine. Tokom godina, došla mu je mudrost, a sa mudrošću je naučio
+												gorčinu. Ne bojte se da ga pitate za savet - istina ostaje kakva
+												jeste, kakva god da je.
+											</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">SWEET AND DEAD</div>
+											<div class="compound__text text">Brandi, Beli Rum, Absint, Limeta, Marakuja,
+												Šećer, Aloja
+											</div>
+										</div>
+										<div class="compound__price">
+											900
+										</div>
+									</div>
+									<div class="compound__info">
+										<button class="compound__btn stretched-link" type="button" data-spoiler>
+											Opasna Saputnica
+											<i>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#dropdown"></use>
+												</svg>
+											</i>
+										</button>
+										<div class="compound__info-body">
+											<small>
+												Ovaj duh nije izgubio sposobnost letenja, često posmatra sve sa
+												visine. Tokom godina, došla mu je mudrost, a sa mudrošću je naučio
+												gorčinu. Ne bojte se da ga pitate za savet - istina ostaje kakva
+												jeste, kakva god da je.
+											</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">NAKED MONKEY</div>
+											<div class="compound__text text">Rum, Rooibush, Liker Galliano L'Autentico,
+												Bananin likér, Sirup od vanile, Limeta, Sok od narandže, Sok od ananasa
+											</div>
+										</div>
+										<div class="compound__price">
+											850
+										</div>
+									</div>
+									<div class="compound__info">
+										<button class="compound__btn stretched-link" type="button" data-spoiler>
+											Provalnik i Prevarant
+											<i>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#dropdown"></use>
+												</svg>
+											</i>
+										</button>
+										<div class="compound__info-body">
+											<small>
+												Ovaj duh nije izgubio sposobnost letenja, često posmatra sve sa
+												visine. Tokom godina, došla mu je mudrost, a sa mudrošću je naučio
+												gorčinu. Ne bojte se da ga pitate za savet - istina ostaje kakva
+												jeste, kakva god da je.
+											</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">JUNGLE BIRD</div>
+											<div class="compound__text text">Tamni rum, Campari, Limeta,
+												Sok od ananasa, Šećer
+											</div>
+										</div>
+										<div class="compound__price">
+											750
+										</div>
+									</div>
+									<div class="compound__info">
+										<button class="compound__btn stretched-link" type="button" data-spoiler>
+											Tropski Raj
+											<i>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#dropdown"></use>
+												</svg>
+											</i>
+										</button>
+										<div class="compound__info-body">
+											<small>
+												Ovaj duh nije izgubio sposobnost letenja, često posmatra sve sa
+												visine. Tokom godina, došla mu je mudrost, a sa mudrošću je naučio
+												gorčinu. Ne bojte se da ga pitate za savet - istina ostaje kakva
+												jeste, kakva god da je.
+											</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">EXPEDITION</div>
+											<div class="compound__text text">
+												Mix Rum, Burbon, Kafeni liker, Limeta, Cimet, Med, Vanilija
+											</div>
+										</div>
+										<div class="compound__price">
+											850
+										</div>
+									</div>
+									<div class="compound__info">
+										<button class="compound__btn stretched-link" type="button" data-spoiler>
+											Čvrsto se držite, krećemo
+											<i>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#dropdown"></use>
+												</svg>
+											</i>
+										</button>
+										<div class="compound__info-body">
+											<small>
+												Ovaj duh nije izgubio sposobnost letenja, često posmatra sve sa
+												visine. Tokom godina, došla mu je mudrost, a sa mudrošću je naučio
+												gorčinu. Ne bojte se da ga pitate za savet - istina ostaje kakva
+												jeste, kakva god da je.
+											</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">MAI TAI</div>
+											<div class="compound__text text">
+												Mix Rum, Triple Sec liker,
+												Orgeat, Limeta
+											</div>
+										</div>
+										<div class="compound__price">
+											850
+										</div>
+									</div>
+									<div class="compound__info">
+										<button class="compound__btn stretched-link" type="button" data-spoiler>
+											Tih i Misteriozan
+											<i>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#dropdown"></use>
+												</svg>
+											</i>
+										</button>
+										<div class="compound__info-body">
+											<small>
+												Ovaj duh nije izgubio sposobnost letenja, često posmatra sve sa
+												visine. Tokom godina, došla mu je mudrost, a sa mudrošću je naučio
+												gorčinu. Ne bojte se da ga pitate za savet - istina ostaje kakva
+												jeste, kakva god da je.
+											</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">OLA GROGRAM</div>
+											<div class="compound__text text">
+												Beli rum, Liker od kafe, Malina, Vanila, Sok od limete
+											</div>
+										</div>
+										<div class="compound__price">
+											950
+										</div>
+									</div>
+									<div class="compound__info">
+										<button class="compound__btn stretched-link" type="button" data-spoiler>
+											Da Izleči i Zaštiti
+											<i>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#dropdown"></use>
+												</svg>
+											</i>
+										</button>
+										<div class="compound__info-body">
+											<small>
+												Ovaj duh nije izgubio sposobnost letenja, često posmatra sve sa
+												visine. Tokom godina, došla mu je mudrost, a sa mudrošću je naučio
+												gorčinu. Ne bojte se da ga pitate za savet - istina ostaje kakva
+												jeste, kakva god da je.
+											</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">SINGAPORE SLING</div>
+											<div class="compound__text text">
+												Džin, Liker od višnje, Benedictine, Triple sec liker, Ananas, Limeta
+											</div>
+										</div>
+										<div class="compound__price">
+											850
+										</div>
+									</div>
+									<div class="compound__info">
+										<button class="compound__btn stretched-link" type="button" data-spoiler>
+											Da Izleči i Zaštiti
+											<i>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#dropdown"></use>
+												</svg>
+											</i>
+										</button>
+										<div class="compound__info-body">
+											<small>
+												Ovaj duh nije izgubio sposobnost letenja, često posmatra sve sa
+												visine. Tokom godina, došla mu je mudrost, a sa mudrošću je naučio
+												gorčinu. Ne bojte se da ga pitate za savet - istina ostaje kakva
+												jeste, kakva god da je.
+											</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">ZOMBIE</div>
+											<div class="compound__text text">
+												Mix rum, Absint, Falernum, Ananas, Grenadin, Grejpfrut
+											</div>
+										</div>
+										<div class="compound__price">
+											980
+										</div>
+									</div>
+									<div class="compound__info">
+										<button class="compound__btn stretched-link" type="button" data-spoiler>
+											Ne više od dva zombija u jednoj ruci
+											<i>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#dropdown"></use>
+												</svg>
+											</i>
+										</button>
+										<div class="compound__info-body">
+											<small>
+												Ovaj duh nije izgubio sposobnost letenja, često posmatra sve sa
+												visine. Tokom godina, došla mu je mudrost, a sa mudrošću je naučio
+												gorčinu. Ne bojte se da ga pitate za savet - istina ostaje kakva
+												jeste, kakva god da je.
+											</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">FRIDA</div>
+											<div class="compound__text text">
+												Džin, Liker sa začinima, Čili sirup, Limunska trava, Jagoda, Sok od limete
+											</div>
+										</div>
+										<div class="compound__price">
+											950
+										</div>
+									</div>
+									<div class="compound__info">
+										<button class="compound__btn stretched-link" type="button" data-spoiler>
+											Igre sa Smrću
+											<i>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#dropdown"></use>
+												</svg>
+											</i>
+										</button>
+										<div class="compound__info-body">
+											<small>
+												Ovaj duh nije izgubio sposobnost letenja, često posmatra sve sa
+												visine. Tokom godina, došla mu je mudrost, a sa mudrošću je naučio
+												gorčinu. Ne bojte se da ga pitate za savet - istina ostaje kakva
+												jeste, kakva god da je.
+											</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">WALTER WHITE</div>
+											<div class="compound__text text">
+												Rum mix, Branca menta, Grenadine, Šećer, Limeta
+											</div>
+										</div>
+										<div class="compound__price">
+											750
+										</div>
+									</div>
+									<div class="compound__info">
+										<button class="compound__btn stretched-link" type="button" data-spoiler>
+											Osnovne hemikalije
+											<i>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#dropdown"></use>
+												</svg>
+											</i>
+										</button>
+										<div class="compound__info-body">
+											<small>
+												Ovaj duh nije izgubio sposobnost letenja, često posmatra sve sa
+												visine. Tokom godina, došla mu je mudrost, a sa mudrošću je naučio
+												gorčinu. Ne bojte se da ga pitate za savet - istina ostaje kakva
+												jeste, kakva god da je.
+											</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title"> BEAUTIFUL COLADA</div>
+											<div class="compound__text text">
+												Začinjeni rum, Kokosov rum, Svež ananas, Sok od ananasa, Sirup od kokosa,
+												Sok od limuna
+											</div>
+										</div>
+										<div class="compound__price">
+											980
+										</div>
+									</div>
+									<div class="compound__info">
+										<button class="compound__btn stretched-link" type="button" data-spoiler>
+											Ukus raja
+											<i>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#dropdown"></use>
+												</svg>
+											</i>
+										</button>
+										<div class="compound__info-body">
+											<small>
+												Ovaj duh nije izgubio sposobnost letenja, često posmatra sve sa
+												visine. Tokom godina, došla mu je mudrost, a sa mudrošću je naučio
+												gorčinu. Ne bojte se da ga pitate za savet - istina ostaje kakva
+												jeste, kakva god da je.
+											</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title"> YINGLONG</div>
+											<div class="compound__text text">
+												Tekila, Čili, Mandarina, Limeta, Liker od mente, Matcha
+											</div>
+										</div>
+										<div class="compound__price">
+											850
+										</div>
+									</div>
+									<div class="compound__info">
+										<button class="compound__btn stretched-link" type="button" data-spoiler>
+											Plamena Moć
+											<i>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#dropdown"></use>
+												</svg>
+											</i>
+										</button>
+										<div class="compound__info-body">
+											<small>
+												Ovaj duh nije izgubio sposobnost letenja, često posmatra sve sa
+												visine. Tokom godina, došla mu je mudrost, a sa mudrošću je naučio
+												gorčinu. Ne bojte se da ga pitate za savet - istina ostaje kakva
+												jeste, kakva god da je.
+											</small>
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title"> BLACK PEARL</div>
+											<div class="compound__text text">
+												Džin, Tekila, Rum, Votka, Blue curacao, Ananasov kordijal
+											</div>
+										</div>
+										<div class="compound__price">
+											1900
+										</div>
+									</div>
+									<div class="compound__info">
+										<button class="compound__btn stretched-link" type="button" data-spoiler>
+											Skrz horizont
+											<i>
+												<svg>
+													<use xlink:href="img/icons/icons.svg#dropdown"></use>
+												</svg>
+											</i>
+										</button>
+										<div class="compound__info-body">
+											<small>
+												Ovaj duh nije izgubio sposobnost letenja, često posmatra sve sa
+												visine. Tokom godina, došla mu je mudrost, a sa mudrošću je naučio
+												gorčinu. Ne bojte se da ga pitate za savet - istina ostaje kakva
+												jeste, kakva god da je.
+											</small>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="marquee">
+				<div class="marquee__items">
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+				</div>
+				<div aria-hidden="true" class="marquee__items">
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+
+				</div>
+				<div class="marquee__items">
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+				</div>
+				<div aria-hidden="true" class="marquee__items">
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+
+				</div>
+			</div>
+
+			<section class="item-bar item-bar_icons">
+				<div class="item-bar__circle item-bar__circle_right">
+					<img src="img/decor/circle.webp" alt="Image">
+				</div>
+				<div class="item-bar__container-fw">
+					<div class="item-bar__wrapper">
+						<div class="item-bar__gallery">
+							<div class="item-bar__gallery-sticky">
+								<div class="item-bar__body swiper">
+									<div class="swiper-wrapper">
+										<div class="item-bar__slide swiper-slide">
+											<img src="img/gallery-slider/cons/01.webp" alt="Image" class="ibg">
+										</div>
+										<div class="item-bar__slide swiper-slide">
+											<img src="img/gallery-slider/cons/01.webp" alt="Image" class="ibg">
+										</div>
+										<div class="item-bar__slide swiper-slide">
+											<img src="img/gallery-slider/cons/01.webp" alt="Image" class="ibg">
+										</div>
+										<div class="item-bar__slide swiper-slide">
+											<img src="img/gallery-slider/cons/01.webp" alt="Image" class="ibg">
+										</div>
+									</div>
+									<div class="swiper-controls">
+										<button type="button" class="swiper-button swiper-button-prev">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#dropdown"></use>
+											</svg>
+										</button>
+										<button type="button" class="swiper-button swiper-button-next">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#dropdown"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="item-bar__gallery-small gallery-small">
+								<div class="gallery-small__list">
+									<div class="gallery-small__item">
+										<img src="img/gallery-slider/cons/small/01.webp" alt="Image" class="ibg">
+									</div>
+									<div class="gallery-small__item">
+										<img src="img/gallery-slider/cons/small/02.webp" alt="Image" class="ibg">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-bar__content">
+							<h2 class="item-bar__title title">
+								<span>I</span>CONs
+							</h2>
+							<div class="item-bar__text text">
+								U ovom delu menija, nudimo našim gostima pravu klasiku. Stari i dobro poznati recepti su
+								izbalansirana remek-dela, verni stari prijatelji za one trenutke kada ne želite eksperimente
+								i inovacije.
+							</div>
+							<div class="item-bar__content-list">
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">BLOODY MARY</div>
+											<div class="compound__text text">
+												Tomatni mix, Votka
+											</div>
+										</div>
+										<div class="compound__price">
+											700
+										</div>
+									</div>
+									<div class="compound__info">
+										<div class="compound__btn">
+											200 ml
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">PORNSTAR MARTINI</div>
+											<div class="compound__text text">
+												Votka, Marakuja, Vanila, Limeta, Penušavo vino
+											</div>
+										</div>
+										<div class="compound__price">
+											750
+										</div>
+									</div>
+									<div class="compound__info">
+										<div class="compound__btn">
+											170 ml
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">PAPER PLANE</div>
+											<div class="compound__text text">
+												Burbon, Aperol, Amaro, Limun
+											</div>
+										</div>
+										<div class="compound__price">
+											850
+										</div>
+									</div>
+									<div class="compound__info">
+										<div class="compound__btn">
+											120 ml
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">
+												OLD CUBAN
+											</div>
+											<div class="compound__text text">
+												Beli rum, Šećer, Limeta, Penušavo vino,
+											</div>
+										</div>
+										<div class="compound__price">
+											650
+										</div>
+									</div>
+									<div class="compound__info">
+										<div class="compound__btn">
+											150 ml
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">
+												CLOVER CLUB
+											</div>
+											<div class="compound__text text">
+												Džin, Malina, Limeta, Šećer, Belance
+											</div>
+										</div>
+										<div class="compound__price">
+											750
+										</div>
+									</div>
+									<div class="compound__info">
+										<div class="compound__btn">
+											125 ml
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">
+												AMARETTO SOUR
+											</div>
+											<div class="compound__text text">
+												Amaretto, Burbon, Limun, Šećer, Belance
+											</div>
+										</div>
+										<div class="compound__price">
+											850
+										</div>
+									</div>
+									<div class="compound__info">
+										<div class="compound__btn">
+											90 ml
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">
+												LIMONCELLO SPRITZ
+											</div>
+											<div class="compound__text text">
+												Limoncello, Soda, Penušavo vino
+											</div>
+										</div>
+										<div class="compound__price">
+											700
+										</div>
+									</div>
+									<div class="compound__info">
+										<div class="compound__btn">
+											120 ml
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">
+												NEGRONI
+											</div>
+											<div class="compound__text text">
+												Džin, Kampari, Vermut
+											</div>
+										</div>
+										<div class="compound__price">
+											850
+										</div>
+									</div>
+									<div class="compound__info">
+										<div class="compound__btn">
+											90 ml
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="marquee">
+				<div class="marquee__items">
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+				</div>
+				<div aria-hidden="true" class="marquee__items">
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+
+				</div>
+				<div class="marquee__items">
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+				</div>
+				<div aria-hidden="true" class="marquee__items">
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+
+				</div>
+			</div>
+
+			<section class="item-bar item-bar_sons">
+				<div class="item-bar__circle item-bar__circle_left">
+					<img src="img/decor/circle.webp" alt="Image">
+				</div>
+				<div class="item-bar__container-fw">
+					<div class="item-bar__wrapper">
+						<div class="item-bar__gallery">
+							<div class="item-bar__gallery-sticky">
+								<div class="item-bar__body swiper">
+									<div class="swiper-wrapper">
+										<div class="item-bar__slide swiper-slide">
+											<img src="img/gallery-slider/sons/01.webp" alt="Image" class="ibg">
+										</div>
+										<div class="item-bar__slide swiper-slide">
+											<img src="img/gallery-slider/sons/01.webp" alt="Image" class="ibg">
+										</div>
+										<div class="item-bar__slide swiper-slide">
+											<img src="img/gallery-slider/sons/01.webp" alt="Image" class="ibg">
+										</div>
+										<div class="item-bar__slide swiper-slide">
+											<img src="img/gallery-slider/sons/01.webp" alt="Image" class="ibg">
+										</div>
+									</div>
+									<div class="swiper-controls">
+										<button type="button" class="swiper-button swiper-button-prev">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#dropdown"></use>
+											</svg>
+										</button>
+										<button type="button" class="swiper-button swiper-button-next">
+											<svg>
+												<use xlink:href="img/icons/icons.svg#dropdown"></use>
+											</svg>
+										</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="item-bar__gallery-small gallery-small">
+								<div class="gallery-small__list">
+									<div class="gallery-small__item">
+										<img src="img/gallery-slider/sons/small/01.webp" alt="Image" class="ibg">
+									</div>
+									<div class="gallery-small__item">
+										<img src="img/gallery-slider/sons/small/02.webp" alt="Image" class="ibg">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item-bar__content">
+							<h2 class="item-bar__title title">
+								<span>S</span>ONs
+							</h2>
+							<div class="item-bar__text text">
+								Sekcija potpisnih pića, stvorena našim rukama, maštom i čulom ukusa.
+								Bar će uvek biti srce našeg zanata, privlačeći duž vijugavih staza gostoprimstva.
+							</div>
+							<div class="item-bar__content-list">
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">BLOODY MARY</div>
+											<div class="compound__text text">
+												Tomatni mix, Votka
+											</div>
+										</div>
+										<div class="compound__price">
+											700
+										</div>
+									</div>
+									<div class="compound__info">
+										<div class="compound__btn">
+											200 ml
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">PORNSTAR MARTINI</div>
+											<div class="compound__text text">
+												Votka, Marakuja, Vanila, Limeta, Penušavo vino
+											</div>
+										</div>
+										<div class="compound__price">
+											750
+										</div>
+									</div>
+									<div class="compound__info">
+										<div class="compound__btn">
+											170 ml
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">PAPER PLANE</div>
+											<div class="compound__text text">
+												Burbon, Aperol, Amaro, Limun
+											</div>
+										</div>
+										<div class="compound__price">
+											850
+										</div>
+									</div>
+									<div class="compound__info">
+										<div class="compound__btn">
+											120 ml
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">
+												OLD CUBAN
+											</div>
+											<div class="compound__text text">
+												Beli rum, Šećer, Limeta, Penušavo vino,
+											</div>
+										</div>
+										<div class="compound__price">
+											650
+										</div>
+									</div>
+									<div class="compound__info">
+										<div class="compound__btn">
+											150 ml
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">
+												CLOVER CLUB
+											</div>
+											<div class="compound__text text">
+												Džin, Malina, Limeta, Šećer, Belance
+											</div>
+										</div>
+										<div class="compound__price">
+											750
+										</div>
+									</div>
+									<div class="compound__info">
+										<div class="compound__btn">
+											125 ml
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">
+												AMARETTO SOUR
+											</div>
+											<div class="compound__text text">
+												Amaretto, Burbon, Limun, Šećer, Belance
+											</div>
+										</div>
+										<div class="compound__price">
+											850
+										</div>
+									</div>
+									<div class="compound__info">
+										<div class="compound__btn">
+											90 ml
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">
+												LIMONCELLO SPRITZ
+											</div>
+											<div class="compound__text text">
+												Limoncello, Soda, Penušavo vino
+											</div>
+										</div>
+										<div class="compound__price">
+											700
+										</div>
+									</div>
+									<div class="compound__info">
+										<div class="compound__btn">
+											120 ml
+										</div>
+									</div>
+
+								</div>
+								<div class="compound">
+									<div class="compound__top">
+										<div class="compound__top-left">
+											<div class="compound__title">
+												NEGRONI
+											</div>
+											<div class="compound__text text">
+												Džin, Kampari, Vermut
+											</div>
+										</div>
+										<div class="compound__price">
+											850
+										</div>
+									</div>
+									<div class="compound__info">
+										<div class="compound__btn">
+											90 ml
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="marquee">
+				<div class="marquee__items">
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+				</div>
+				<div aria-hidden="true" class="marquee__items">
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+
+				</div>
+				<div class="marquee__items">
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+				</div>
+				<div aria-hidden="true" class="marquee__items">
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+					<div class="marquee__item">
+						IDOL
+						<img src="img/decor/head.svg" alt="Image">
+					</div>
+
+				</div>
+			</div>
+
+			<section class="item-bar item-bar_spirits">
+				<div class="item-bar__circle item-bar__circle_right">
+					<img src="img/decor/circle.webp" alt="Image">
+				</div>
+				<div class="item-bar__circle item-bar__circle_left">
+					<img src="img/decor/circle.webp" alt="Image">
+				</div>
+				<div class="item-bar__container">
+					<div class="item-bar__wrapper">
+						<div class="item-bar__content">
+							<h2 class="item-bar__title title">
+								<span>S</span>PIRITs
+							</h2>
+							<div class="item-bar__text text">
+								U ovoj sekciji naći ćete čista, nemešana pića.
+							</div>
+							<div class="item-bar__menu-spirits menu-spirits">
+								<div class="menu-spirits__col">
+									<div class="menu-spirits__title">RUM</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">CANEROCK</div>
+												<div class="compound__text text">
+													Tomatni mix, Votka
+												</div>
+											</div>
+											<div class="compound__price">
+												950
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">CANEROCK</div>
+												<div class="compound__text text">
+													Tomatni mix, Votka
+												</div>
+											</div>
+											<div class="compound__price">
+												950
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">CANEROCK</div>
+												<div class="compound__text text">
+													Tomatni mix, Votka
+												</div>
+											</div>
+											<div class="compound__price">
+												950
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">CANEROCK</div>
+												<div class="compound__text text">
+													Tomatni mix, Votka
+												</div>
+											</div>
+											<div class="compound__price">
+												950
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">CANEROCK</div>
+												<div class="compound__text text">
+													Tomatni mix, Votka
+												</div>
+											</div>
+											<div class="compound__price">
+												950
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">CANEROCK</div>
+												<div class="compound__text text">
+													Tomatni mix, Votka
+												</div>
+											</div>
+											<div class="compound__price">
+												950
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">CANEROCK</div>
+												<div class="compound__text text">
+													Tomatni mix, Votka
+												</div>
+											</div>
+											<div class="compound__price">
+												950
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+									<div class="menu-spirits__title">VISKI / BURBON</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">GLENDRONACH 12 YO</div>
+												<div class="compound__text text">
+													(SCOTLAND, SINGLE MALT)
+												</div>
+											</div>
+											<div class="compound__price">
+												1350
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">GLENDRONACH 12 YO</div>
+												<div class="compound__text text">
+													(SCOTLAND, SINGLE MALT)
+												</div>
+											</div>
+											<div class="compound__price">
+												1350
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+								</div>
+								<div class="menu-spirits__col">
+									<div class="menu-spirits__title">DŽIN</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">GOLD</div>
+												<div class="compound__text text">
+													(SPAIN, TANGERINES)
+												</div>
+											</div>
+											<div class="compound__price">
+												850
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">GOLD</div>
+												<div class="compound__text text">
+													(SPAIN, TANGERINES)
+												</div>
+											</div>
+											<div class="compound__price">
+												850
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">GOLD</div>
+												<div class="compound__text text">
+													(SPAIN, TANGERINES)
+												</div>
+											</div>
+											<div class="compound__price">
+												850
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">GOLD</div>
+												<div class="compound__text text">
+													(SPAIN, TANGERINES)
+												</div>
+											</div>
+											<div class="compound__price">
+												850
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">GOLD</div>
+												<div class="compound__text text">
+													(SPAIN, TANGERINES)
+												</div>
+											</div>
+											<div class="compound__price">
+												850
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+									<div class="menu-spirits__title">VISKI / BURBON</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">GLENDRONACH 12 YO</div>
+												<div class="compound__text text">
+													(SCOTLAND, SINGLE MALT)
+												</div>
+											</div>
+											<div class="compound__price">
+												1350
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">GLENDRONACH 12 YO</div>
+												<div class="compound__text text">
+													(SCOTLAND, SINGLE MALT)
+												</div>
+											</div>
+											<div class="compound__price">
+												1350
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">GLENDRONACH 12 YO</div>
+												<div class="compound__text text">
+													(SCOTLAND, SINGLE MALT)
+												</div>
+											</div>
+											<div class="compound__price">
+												1350
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+									<div class="compound">
+										<div class="compound__top">
+											<div class="compound__top-left">
+												<div class="compound__title">GLENDRONACH 12 YO</div>
+												<div class="compound__text text">
+													(SCOTLAND, SINGLE MALT)
+												</div>
+											</div>
+											<div class="compound__price">
+												1350
+											</div>
+										</div>
+										<div class="compound__info">
+											<div class="compound__btn">
+												50 ml
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="cocktails-gallery">
+				<div class="item-bar__circle item-bar__circle_right">
+					<img src="img/decor/circle.webp" alt="Image">
+				</div>
+				<div class="cocktails-gallery__container-fw">
+					<div class="cocktails-gallery__inner" data-gallery>
+						<div class="cocktails-gallery__item">
+							<img src="img/cocktails-gallery/01.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/cocktails-gallery/02.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/cocktails-gallery/03.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/cocktails-gallery/04.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/cocktails-gallery/05.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/cocktails-gallery/06.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/cocktails-gallery/07.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/cocktails-gallery/08.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/cocktails-gallery/09.webp" alt="Image" class="ibg">
+						</div>
+						<div class="cocktails-gallery__item">
+							<img src="img/cocktails-gallery/10.webp" alt="Image" class="ibg">
+						</div>
+					</div>
+				</div>
+				<div class="cocktails-gallery__marquee">
+					<div class="marquee">
+						<div class="marquee__items">
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+						</div>
+						<div aria-hidden="true" class="marquee__items">
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+
+						</div>
+						<div class="marquee__items">
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+						</div>
+						<div aria-hidden="true" class="marquee__items">
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+							<div class="marquee__item">
+								IDOL
+								<img src="img/decor/head.svg" alt="Image">
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__wrapper">
+				<div class="footer__container">
+					<div class="footer__top">
+						<div class="footer__top-col">
+							<div class="footer__top-title title_h3 title">
+								<span>C</span>ontact
+							</div>
+							<a href="tel:+381611814599">+381 61 181 45 99</a>
+						</div>
+						<div class="footer__top-col">
+							<div class="footer__top-title title_h3 title">
+								<span>M</span>essenger
+							</div>
+							<ul class="footer__top-list">
+								<li>
+									<a href="">Instagram</a>
+								</li>
+								<li>
+									<a href="">Tripadvisor</a>
+								</li>
+								<li>
+									<a href="">Facebook</a>
+								</li>
+							</ul>
+						</div>
+						<div class="footer__top-col">
+							<div class="footer__top-title title_h3 title">
+								<span>A</span>dresa
+							</div>
+							Strahinjića Bana 61, Belgrade
+						</div>
+						<div class="footer__top-col">
+							<div class="footer__top-title title_h3 title">
+								<span>R</span>ADNO VREME
+							</div>
+							<ul>
+								<li>
+									Mon 18.00 - 00.00 Thu-Thu,
+								</li>
+								<li>
+									Sun 12:00 - 00:00
+								</li>
+								<li>
+									Fri-Sat 12:00 - 01:00
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__bottom">
+						<nav class="footer-menu">
+							<ul class="footer-menu__list">
+								<li class="footer-menu__item">
+									<a href="">Home</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="">Bar</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="">Food</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="">Ramen</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="">Book a table</a>
+								</li>
+								<li class="footer-menu__item">
+									<a href="">Contact us</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="footer__bottom-copy">
+							IDOL tiki bar 2025
+						</div>
+						<div class="footer__bottom-action">
+							<a href="" class="footer__bottom-btn button">WhatsApp</a>
+							<a href="" class="footer__bottom-btn button button_black">Wolt Dostava</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+	<script src="js/app.min.js"></script>
+	<div id="widget" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.73333 1.48883L21.5469 21.0288" stroke="var(--primary)" stroke-linecap="square" />
+						<path d="M21.2667 1.48883L1.45309 21.0288" stroke="var(--primary)" stroke-linecap="square" />
+					</svg>
+				</button>
+				<div class="popup__text">
+					<!--вставляем сюда widget -->
+
+					<!--end  -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
