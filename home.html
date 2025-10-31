@@ -5,7 +5,7 @@
 	<title>Home</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20251030071754">
+	<link rel="stylesheet" href="css/style.min.css?_v=20251031154216">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -58,16 +58,20 @@
 		<main class="page">
 			<section class="hero">
 				<div class="hero__video">
+					<!-- Заглушка -->
+					<img class="hero__video-poster" src="img/hero-bg.webp" alt="Background preview" decoding="async" loading="lazy">
+
 					<!-- ПК-видео -->
-					<video class="hero__video-bg hero__video-bg_pc" autoplay muted loop playsinline>
+					<video class="hero__video-bg hero__video-bg_pc" muted loop playsinline preload="auto">
 						<source src="files/hero-bg-desktop.mp4" type="video/mp4">
 					</video>
 
 					<!-- Мобильное видео -->
-					<video class="hero__video-bg hero__video-bg_mob" autoplay muted loop playsinline>
+					<video class="hero__video-bg hero__video-bg_mob" muted loop playsinline preload="auto">
 						<source src="files/hero-bg-mobile.mp4" type="video/mp4">
 					</video>
 				</div>
+
 				<div class="hero__container">
 					<div class="hero__content">
 						<h1 class="hero__title title">
@@ -77,7 +81,7 @@
 						<button class="button hero__btn" type="button" data-popup="#widget">Book</button>
 					</div>
 					<div class="hero__info">
-						<div class="hero__info-item">
+						<div class="hero__info-item wow animate__fadeInUp">
 							<div class="hero__info-title">Radno vreme</div>
 							<ul class="hero__info-list text">
 								<li>
@@ -91,7 +95,7 @@
 								</li>
 							</ul>
 						</div>
-						<div class="hero__info-item">
+						<div class="hero__info-item wow animate__fadeInUp">
 							<div class="hero__info-title">Messenger</div>
 							<ul class="hero__info-list text">
 								<li>
@@ -121,15 +125,15 @@
 			</section>
 			<section class="section cocktails">
 				<div class="cocktails__circle cocktails__circle_right">
-					<img src="img/decor/circle.webp" alt="Image">
+					<img src="img/decor/circle.webp" alt="Image" loading="lazy">
 				</div>
 				<div class="cocktails__circle cocktails__circle_left">
-					<img src="img/decor/circle.webp" alt="Image">
+					<img src="img/decor/circle.webp" alt="Image" loading="lazy">
 				</div>
 				<div class="section__top">
 					<div class="section__container">
 						<div class="cocktails__top">
-							<h2 class="cocktails__title title"><span>Meka</span> koktela</h2>
+							<h2 class="cocktails__title title wow animate__fadeInUp"><span>Meka</span> koktela</h2>
 							<div class="swiper-controls">
 								<button type="button" class="swiper-button swiper-button-prev cocktails-btn-prev">
 									<svg>
@@ -143,7 +147,7 @@
 								</button>
 							</div>
 						</div>
-						<div class="cocktails__text text">U barskoj ponudi su egzotični kokteli na bazi ruma, voćnih sokova
+						<div class="cocktails__text text wow animate__fadeInUp">U barskoj ponudi su egzotični kokteli na bazi ruma, voćnih sokova
 							i
 							domaćih sirupa. U našem Black Book ćete naći i poznate tiki koktele poput Zombija ili Maj Taj,
 							kao i
@@ -153,25 +157,25 @@
 				</div>
 				<div class="section__bottom">
 					<div class="section__container-fw">
-						<div class="cocktails__body swiper">
+						<div class="cocktails__body swiper wow animate__fadeIn">
 							<div class="cocktails__wrapper swiper-wrapper">
 								<div class="cocktails__slide swiper-slide">
-									<img class="ibg" src="img/cocktails/01.webp" alt="Image">
+									<img class="ibg" src="img/cocktails/01.webp" alt="Image" loading="lazy">
 								</div>
 								<div class="cocktails__slide swiper-slide">
-									<img class="ibg" src="img/cocktails/02.webp" alt="Image">
+									<img class="ibg" src="img/cocktails/02.webp" alt="Image" loading="lazy">
 								</div>
 								<div class="cocktails__slide swiper-slide">
-									<img class="ibg" src="img/cocktails/03.webp" alt="Image">
+									<img class="ibg" src="img/cocktails/03.webp" alt="Image" loading="lazy">
 								</div>
 								<div class="cocktails__slide swiper-slide">
-									<img class="ibg" src="img/cocktails/04.webp" alt="Image">
+									<img class="ibg" src="img/cocktails/04.webp" alt="Image" loading="lazy">
 								</div>
 								<div class="cocktails__slide swiper-slide">
-									<img class="ibg" src="img/cocktails/05.webp" alt="Image">
+									<img class="ibg" src="img/cocktails/05.webp" alt="Image" loading="lazy">
 								</div>
 								<div class="cocktails__slide swiper-slide">
-									<img class="ibg" src="img/cocktails/01.webp" alt="Image">
+									<img class="ibg" src="img/cocktails/01.webp" alt="Image" loading="lazy">
 								</div>
 							</div>
 							<div class="swiper-pagination"></div>
@@ -179,7 +183,7 @@
 							<!-- Если нужен скролбар -->
 							<div class="swiper-scrollbar"></div>
 						</div>
-						<div class="cocktails__action">
+						<div class="cocktails__action wow animate__fadeInUp">
 							<button class="cocktails__btn button" type="button" data-popup="#widget">
 								Black book
 								<i class="button__icon">
@@ -195,8 +199,8 @@
 			<section class="cuisine section">
 				<div class="section__top">
 					<div class="section__container">
-						<h2 class="section__title title"><span>Asian</span>Cuisine</h2>
-						<div class="section__text text">
+						<h2 class="section__title title wow animate__fadeInUp"><span>Asian</span>Cuisine</h2>
+						<div class="section__text text wow animate__fadeInUp">
 							In IDOL we are offering Asian cuisine along with our tiki cocktails. Spicy and aromatic dishes
 							perfectly complement vivid and fresh tiki cocktails. We create the atmosphere of a tiki bar
 							where
@@ -206,30 +210,30 @@
 				</div>
 				<div class="section__bottom">
 					<div class="section__container-fw">
-						<div class="cuisine__body swiper">
+						<div class="cuisine__body swiper wow animate__fadeIn">
 							<div class="cuisine__wrapper swiper-wrapper">
 								<div class="cuisine__slide swiper-slide">
-									<img src="img/cuisine/01.webp" alt="Image" class="ibg">
+									<img src="img/cuisine/01.webp" alt="Image" loading="lazy" class="ibg">
 								</div>
 								<div class="cuisine__slide swiper-slide">
-									<img src="img/cuisine/02.webp" alt="Image" class="ibg">
+									<img src="img/cuisine/02.webp" alt="Image" loading="lazy" class="ibg">
 								</div>
 								<div class="cuisine__slide swiper-slide">
-									<img src="img/cuisine/02.webp" alt="Image" class="ibg">
+									<img src="img/cuisine/02.webp" alt="Image" loading="lazy" class="ibg">
 								</div>
 								<div class="cuisine__slide swiper-slide">
-									<img src="img/cuisine/01.webp" alt="Image" class="ibg">
+									<img src="img/cuisine/01.webp" alt="Image" loading="lazy" class="ibg">
 								</div>
 								<div class="cuisine__slide swiper-slide">
-									<img src="img/cuisine/02.webp" alt="Image" class="ibg">
+									<img src="img/cuisine/02.webp" alt="Image" loading="lazy" class="ibg">
 								</div>
 								<div class="cuisine__slide swiper-slide">
-									<img src="img/cuisine/02.webp" alt="Image" class="ibg">
+									<img src="img/cuisine/02.webp" alt="Image" loading="lazy" class="ibg">
 								</div>
 							</div>
 							<div class="swiper-pagination"></div>
 						</div>
-						<div class="cuisine__action">
+						<div class="cuisine__action wow animate__fadeInUp">
 							<a href="" class="cuisine__btn button">Menu</a>
 						</div>
 					</div>
@@ -237,15 +241,15 @@
 			</section>
 			<section class="section section_fw estetica">
 				<div class="estetica__circle estetica__circle_right">
-					<img src="img/decor/circle.webp" alt="Image">
+					<img src="img/decor/circle.webp" alt="Image" loading="lazy">
 				</div>
 				<div class="estetica__circle estetica__circle_left">
-					<img src="img/decor/circle.webp" alt="Image">
+					<img src="img/decor/circle.webp" alt="Image" loading="lazy">
 				</div>
 				<div class="section__top">
 					<div class="section__container">
-						<h2 class="section__title title"><span>Dizajn</span> i estetika</h2>
-						<div class="section__text text">
+						<h2 class="section__title title wow animate__fadeInUp"><span>Dizajn</span> i estetika</h2>
+						<div class="section__text text wow animate__fadeInUp">
 							Izobilje boja, tropske biljke i zastrašujući idoli bude maštu. Kokteli se služe u ručno rađenim
 							čašama u obliku tiki idola. Uz lagani ritam tehno-muzike zaboravićete na užurbanu svakodnevicu i
 							predaćete se osećaju letnjeg zamora.
@@ -254,20 +258,20 @@
 				</div>
 				<div class="section__bottom">
 					<div class="estetica__inner">
-						<div class="estetica__item">
-							<img class="ibg" src="img/estetica/01.webp" alt="Image">
+						<div class="estetica__item wow animate__fadeIn">
+							<img class="ibg" src="img/estetica/01.webp" alt="Image" loading="lazy">
 						</div>
-						<div class="estetica__item">
-							<img class="ibg" src="img/estetica/02.webp" alt="Image">
+						<div class="estetica__item wow animate__fadeIn">
+							<img class="ibg" src="img/estetica/02.webp" alt="Image" loading="lazy">
 						</div>
-						<div class="estetica__item">
-							<img class="ibg" src="img/estetica/03.webp" alt="Image">
+						<div class="estetica__item wow animate__fadeIn">
+							<img class="ibg" src="img/estetica/03.webp" alt="Image" loading="lazy">
 						</div>
-						<div class="estetica__item">
-							<img class="ibg" src="img/estetica/04.webp" alt="Image">
+						<div class="estetica__item wow animate__fadeIn">
+							<img class="ibg" src="img/estetica/04.webp" alt="Image" loading="lazy">
 						</div>
-						<div class="estetica__item">
-							<img class="ibg" src="img/estetica/05.webp" alt="Image">
+						<div class="estetica__item wow animate__fadeIn">
+							<img class="ibg" src="img/estetica/05.webp" alt="Image" loading="lazy">
 						</div>
 					</div>
 				</div>
@@ -358,7 +362,7 @@
 		</footer>
 
 	</div>
-	<script src="js/app.min.js?_v=20251030071754"></script>
+	<script src="js/app.min.js?_v=20251031154216"></script>
 	<div id="widget" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
