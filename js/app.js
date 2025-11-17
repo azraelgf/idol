@@ -6747,6 +6747,25 @@ PERFORMANCE OF THIS SOFTWARE.
                 heroVideo.classList.add("_video-loaded");
             }
         });
+        window.addEventListener("load", function() {
+            const video = document.querySelector(".hero__video-bg_mob");
+            if (!video) return;
+            video.muted = true;
+            video.playsInline = true;
+            video.setAttribute("playsinline", "");
+            video.setAttribute("webkit-playsinline", "");
+            video.setAttribute("autoplay", "");
+            function tryPlay() {
+                video.play().catch(function(err) {
+                    console.warn("Video autoplay blocked:", err);
+                });
+            }
+            tryPlay();
+            video.addEventListener("canplay", function onCanPlay() {
+                video.removeEventListener("canplay", onCanPlay);
+                tryPlay();
+            });
+        });
         window["FLS"] = false;
         addLoadedClass();
         menuInit();
