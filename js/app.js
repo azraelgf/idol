@@ -6752,18 +6752,19 @@ PERFORMANCE OF THIS SOFTWARE.
             if (!video) return;
             video.muted = true;
             video.playsInline = true;
+            video.setAttribute("muted", "");
+            video.setAttribute("autoplay", "");
             video.setAttribute("playsinline", "");
             video.setAttribute("webkit-playsinline", "");
-            video.setAttribute("autoplay", "");
-            function tryPlay() {
-                video.play().catch(function(err) {
-                    console.warn("Video autoplay blocked:", err);
+            function forcePlay() {
+                const p = video.play();
+                if (p && typeof p.then === "function") p.catch(function(err) {
+                    console.log("Safari заблокировал автоплей:", err);
                 });
             }
-            tryPlay();
-            video.addEventListener("canplay", function onCanPlay() {
+            if (video.readyState >= 2) forcePlay(); else video.addEventListener("canplay", function onCanPlay() {
                 video.removeEventListener("canplay", onCanPlay);
-                tryPlay();
+                forcePlay();
             });
         });
         window["FLS"] = false;
