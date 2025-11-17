@@ -6747,25 +6747,26 @@ PERFORMANCE OF THIS SOFTWARE.
                 heroVideo.classList.add("_video-loaded");
             }
         });
-        window.addEventListener("load", function() {
+        document.addEventListener("DOMContentLoaded", function() {
             const video = document.querySelector(".hero__video-bg_mob");
             if (!video) return;
             video.muted = true;
             video.playsInline = true;
             video.setAttribute("muted", "");
-            video.setAttribute("autoplay", "");
             video.setAttribute("playsinline", "");
             video.setAttribute("webkit-playsinline", "");
-            function forcePlay() {
+            function startVideo() {
                 const p = video.play();
-                if (p && typeof p.then === "function") p.catch(function(err) {
-                    console.log("Safari заблокировал автоплей:", err);
+                if (p && typeof p.then === "function") p.catch(err => {
+                    console.log("Не удалось запустить видео:", err);
                 });
+                document.removeEventListener("touchstart", startVideo);
+                document.removeEventListener("click", startVideo);
             }
-            if (video.readyState >= 2) forcePlay(); else video.addEventListener("canplay", function onCanPlay() {
-                video.removeEventListener("canplay", onCanPlay);
-                forcePlay();
+            document.addEventListener("touchstart", startVideo, {
+                passive: true
             });
+            document.addEventListener("click", startVideo);
         });
         window["FLS"] = false;
         addLoadedClass();
